@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  path: fatyang_tools/bin
+  path: bin/
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
 
 test: 
   files: 
-    - fatyang_tools/test/*
+    - test/*
 
 about:
   home: https://github.com/fatyang799/fatyang_tools
