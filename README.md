@@ -15,9 +15,18 @@ Later these scripts will be put on the online conda. Right now it is only availa
 
 
 
-### 2. Manuals for Tools
+### 2. Installation
 
-#### 2.1 getFull_dir
+```shell
+$ wget -c https://github.com/fatyang799/fatyang_tools/releases/download/v1.0.0/fatyang_tools-1.0.0-0.tar.bz2
+$ conda install --use-local fatyang_tools-1.0.0-0.tar.bz2
+```
+
+
+
+### 3. Manuals for Tools
+
+#### 3.1 getFull_dir
 ```shell
 $ getFull_dir
 Usage: get full dirname for target directory.
@@ -25,7 +34,7 @@ Usage: get full dirname for target directory.
 ```
 
 
-#### 2.2 getFull_file
+#### 3.2 getFull_file
 ```shell
 $ getFull_file
 Usage: get full filename for target file.
@@ -33,7 +42,7 @@ Usage: get full filename for target file.
 ```
 
 
-#### 2.3 md5sum_dir
+#### 3.3 md5sum_dir
 ```shell
 $ md5sum_dir
 Usage: the overlap of file1 and file2
@@ -42,7 +51,7 @@ Usage: the overlap of file1 and file2
 ```
 
 
-#### 2.4 overlap
+#### 3.4 overlap
 ```shell
 $ overlap
 Usage: the overlap of file1 and file2
@@ -51,7 +60,7 @@ Usage: the overlap of file1 and file2
 ```
 
 
-#### 2.5 setdiff
+#### 3.5 setdiff
 ```shell
 $ setdiff
 Usage: result=reference-target
@@ -60,7 +69,7 @@ Usage: result=reference-target
 ```
 
 
-#### 2.6 today
+#### 3.6 today
 ```shell
 $ today -h
 Usage: 
@@ -68,7 +77,7 @@ Usage:
 ```
 
 
-#### 2.7 union
+#### 3.7 union
 ```shell
 Usage: result=unique(reference+target)
         $1: The reference file
@@ -76,7 +85,7 @@ Usage: result=unique(reference+target)
 ```
 
 
-#### 2.8 zhead
+#### 3.8 zhead
 ```shell
 $ zhead
 Usage:
@@ -85,7 +94,7 @@ Usage:
 ```
 
 
-#### 2.9 zwc
+#### 3.9 zwc
 ```shell
 $ zwc
 Usage: print the row number of file.
