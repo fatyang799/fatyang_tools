@@ -1,0 +1,23 @@
+{% set pkg_name = "fatyang_tools" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ pkg_name }}
+  version: {{ version }}
+
+source:
+  path: fatyang_tools/bin
+
+build:
+  number: 0
+  noarch: generic
+
+test: 
+  files: 
+    - fatyang_tools/test/*
+
+about:
+  home: https://github.com/fatyang799/fatyang_tools
+  license: GPL (>= 2)
+  license_family: GPL3
+  summary: "Linux Extended Mini-Tools"

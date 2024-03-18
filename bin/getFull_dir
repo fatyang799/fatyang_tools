@@ -1,0 +1,20 @@
+#!/bin/bash
+
+target=$1
+
+if [[ -z ${target} ]]; then
+	echo "Usage: get full dirname for target directory."
+	echo -e "\t\$1: target directory"
+
+	exit 100
+fi
+
+if [[ ! -d ${target} ]]; then
+	echo -e "The ${target} directory is not exist."
+	exit 100
+fi
+
+cd ${target}
+target=$PWD
+
+echo "${target}"

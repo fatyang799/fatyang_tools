@@ -1,0 +1,20 @@
+#!/bin/bash
+
+dir=$1
+core=$2
+pat=$3
+
+if [[ -z ${dir} ]]; then
+	echo "Usage: the overlap of file1 and file2"
+	echo -e "\t\$1: The target directory."
+	echo -e "\t\$2: The number of threads."
+	echo -e "\t\$3: The file name pattern (glob rule), default '*'."
+
+	exit 100
+fi
+
+if [[ -z ${pat} ]]; then
+	pat="*"
+fi
+
+find ${dir} -name "${pat}" -print0 | xargs -0 -n1 -P ${core} md5sum | sort

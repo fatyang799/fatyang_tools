@@ -1,0 +1,14 @@
+#! /bin/bash
+
+input=$1
+
+if [[ -z ${input} ]]; then
+	echo "Usage: print the row number of file."
+	echo -e "\t\$1: file name"
+
+	exit 100
+fi
+
+num=$(zcat $1 | wc -l)
+
+echo -e "${input}\t$num"
